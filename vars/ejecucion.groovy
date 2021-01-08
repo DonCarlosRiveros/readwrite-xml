@@ -18,8 +18,8 @@ def call()
     /* var_version = xml.release[0].version; */
     var_version = xml.release.version;
     figlet 'Paso 1'
-    arr_version = var_version.split('.');
-    println "The number of fruits is: " + arr_version.lenght;
+    arr_version = var_version.split(".");
+    println "Números contenidos: " + arr_version.lenght;
 
     println arr_version[1]
     println arr_version[2]
