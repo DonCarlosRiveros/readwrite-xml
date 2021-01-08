@@ -21,7 +21,6 @@ def call()
     var_nropos = var_pos.toInteger();
     var_release = var_inversa.substring(1, var_nropos);
     var_newrelease = var_release.toInteger() + 1;
-    figlet 'Paso 2'
     var_nropos = var_nropos + 1;
     var_newversion = var_version.substring(1, (var_largo-var_nropos)) + '.' + var_newrelease;
 
@@ -32,5 +31,6 @@ def call()
 
     println var_newversion
 
-    archivo.write(var_newversion);
+    File file_update = new File(archivo)
+    file_update.write(var_newversion);
 }
