@@ -15,6 +15,7 @@ def call()
     var_version = new File(archivo).getText('UTF-8');
     var_largo = var_version.length();
     var_inversa = var_version.reverse();
+    println 'Inversa : ' + var_inversa;
     var_pos = var_inversa.indexOf('.');
     var_nropos = var_pos.toInteger();
     var_release = var_inversa.substring(1, var_nropos);
