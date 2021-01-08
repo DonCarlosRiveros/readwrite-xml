@@ -13,7 +13,8 @@ def call()
     var_version = new File(archivo).getText('UTF-8')
     println var_version
     figlet 'Paso 1'
-    arr_version = var_version.split('.');
+
+    arr_version = var_version.split(".");
     figlet 'Paso 2'
     println "Números contenidos: " + arr_version.lenght;
 
