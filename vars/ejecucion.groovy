@@ -4,7 +4,7 @@ import groovy.util.*
 def call()
 {
 	def parser  = new XmlParser()
-	def archivo = parser.parse("resources/versiones.xml")
+	def archivo = parser.parse("/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.xml")
 
 	String var_version = ''
 		
