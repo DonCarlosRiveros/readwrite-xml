@@ -27,9 +27,10 @@ def call()
     println var_inversa
 
     var_pos = var_inversa.indexOf('.');
-    println var_pos;
+    println 'Posicion del . en texto : ' + var_pos;
     var_nropos = var_pos.toInteger();
-    println var_nropos;
+    println 'Posicion del . en numero : ' + var_nropos;
+
     var_release = var_inversa.substring(1, var_nropos);
 
     println "Release : " + var_release;
