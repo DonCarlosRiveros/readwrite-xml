@@ -6,8 +6,6 @@ import groovy.xml.dom.DOMCategory;
 def call()
 {
 	def archivoxml = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.xml"
-    def parser     = new XmlParser()
-	def archivo    = parser.parse()
     def xml        = new XmlParser().parse(archivoxml)
 
 	String var_version    = ''
