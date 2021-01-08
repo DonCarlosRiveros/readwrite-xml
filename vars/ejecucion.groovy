@@ -6,6 +6,7 @@ def call()
 	String var_version    = ''
     String var_paso       = ''
     String var_newversion = ''
+    Int var_nroversion    = 0
     /* String[] arr_version */
 
     figlet 'Antes'
@@ -19,6 +20,9 @@ def call()
 
     println var_version.reverse();
     println(var_version.indexOf('.'));
+
+    var_nroversion = (var_version.indexOf('.')), 1, (var_version.indexOf('.'));
+    println var_nroversion;
 
 
     println "Números contenidos: " + arr_version.lenght;
