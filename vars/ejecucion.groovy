@@ -19,9 +19,11 @@ def call()
     var_inversa = var_version.reverse();
     var_pos = var_inversa.indexOf('.');
     var_nropos = var_pos.toInteger();
+
     var_release = var_inversa.substring(1, var_nropos);
     var_newrelease = var_release.toInteger() + 1;
     var_nropos = var_nropos + 1;
+    figlet 'AVISO'
     var_newversion = var_version.substring(1, (var_largo-var_nropos)) + '.' + var_newrelease;
 
     print("Version archivo:")
