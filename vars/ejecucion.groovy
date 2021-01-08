@@ -24,8 +24,6 @@ def call()
     figlet 'Paso 4'
     var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
 
-    
-
     print("Version archivo:")
     println var_version
 
