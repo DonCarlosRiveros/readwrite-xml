@@ -6,7 +6,7 @@ def call()
 	String var_version    = ''
     String var_paso       = ''
     String var_newversion = ''
-    Int var_nroversion    = 0
+    Int var_pos           = 0
     /* String[] arr_version */
 
     figlet 'Antes'
@@ -20,8 +20,10 @@ def call()
 
     println var_version.reverse();
     println(var_version.indexOf('.'));
+    var_pos = (var_version.reverse()).indexOf('.');
+    println var_pos;
 
-    var_nroversion = (var_version.indexOf('.')), 1, (var_version.indexOf('.'));
+    var_nrorelease = (var_version.indexOf('.')), 1, (var_version.indexOf('.'));
     println var_nroversion;
 
 
