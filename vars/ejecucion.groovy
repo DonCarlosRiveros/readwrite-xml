@@ -19,7 +19,9 @@ def call()
     var_inversa = var_version.reverse();
     var_pos = var_inversa.indexOf('.');
     var_nropos = var_pos.toInteger();
+    figlet 'var_release'
     var_release = var_inversa.substring(1, var_nropos);
+    figlet 'var_newrelease'
     var_newrelease = var_release.toInteger() + 1;
     figlet 'AVISO'
     var_nropos = var_nropos + 1;
