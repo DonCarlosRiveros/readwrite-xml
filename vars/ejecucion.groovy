@@ -16,6 +16,10 @@ def call()
 
     String[] arr_version = var_version.split(".");
     figlet 'Paso 2'
+
+    println(arr_version.reverse());
+
+
     println "Números contenidos: " + arr_version.lenght;
 
     println arr_version[1]
