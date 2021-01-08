@@ -1,7 +1,7 @@
 def call()
 {
-    sh 'curl -X GET -u admin:criveros http://localhost:8082/repository/test-nexus/com/devopsusach2020/DevOpsUsach2020/1.0/DevOpsUsach2020-1.0-versiones.txt -O'
-    def archivo = "DevOpsUsach2020-1.0-versiones.txt"
+    sh 'curl -X GET -u admin:criveros http://localhost:8082/repository/test-nexus/com/devopsusach2020/DevOpsUsach2020/1.0.0/DevOpsUsach2020-1.0.0-versiones.txt -O'
+    def archivo = "DevOpsUsach2020-1.0.0-versiones.txt"
 
 	String var_version    = ''
     String var_inversa    = ''
