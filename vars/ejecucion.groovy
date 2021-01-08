@@ -3,11 +3,12 @@ def call()
 {
 	def archivo = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt"
 
-	String  var_version    = ''
-    String  var_paso       = ''
-    String  var_newversion = ''
-    String  var_pos        = ''
-    Number  var_nropos     = 0
+	String var_version    = ''
+    String var_paso       = ''
+    String var_newversion = ''
+    String var_pos        = ''
+    Number var_nropos     = 0
+    Number var_largo      = 0
 
     /* String[] arr_version */
 
@@ -15,6 +16,9 @@ def call()
 
     var_version = new File(archivo).getText('UTF-8')
     println var_version
+    var_largo = var_version.lenght();
+    println "Largo string : " + var_largo;
+    
     figlet 'Paso 1'
 
     String[] arr_version = var_version.split(".");
@@ -28,11 +32,10 @@ def call()
 
     println "Números posicion : " + var_nropos;
 
-    println arr_version[1]
-    println arr_version[2]
     figlet 'Paso 3'
-    var_paso    = arr_version[1];
-    figlet 'Paso 4'
+
+    var_nropos = var_nropos + 1;
+
     var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
 
     print("Version archivo:")
