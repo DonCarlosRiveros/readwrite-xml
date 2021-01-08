@@ -19,6 +19,9 @@ def call()
     figlet 'Paso 1'
     println var_version
     arr_version = var_version.split('.');
+    println arr_version[0]
+    println arr_version[1]
+    println arr_version[2]
     figlet 'Paso 2'
     var_paso    = arr_version[1];
     figlet 'Paso 3'
