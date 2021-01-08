@@ -9,6 +9,7 @@ def call()
     String var_pos        = ''
     Number var_nropos     = 0
     Number var_largo      = 0
+    Number var_release    = 0
     String var_newrelease = ''
 
     /* String[] arr_version */
@@ -27,9 +28,10 @@ def call()
     var_pos = (var_version.reverse()).indexOf('.');
     println var_pos;
     var_nropos = var_pos.toInteger();
-
     var_inversa = var_version.reverse();
-    var_newrelease = var_inversa.substring(1, (var_largo-var_nropos)) + '.'
+    var_release = var_inversa.substring(1, var_nropos)
+
+    var_newrelease = var_inversa.substring(1, (var_largo-var_nropos));
 
     println "Nuevo release : " + var_newrelease;
 
