@@ -19,7 +19,7 @@ def call()
     figlet 'Paso 1'
     arr_version = var_version.split('.');
     figlet 'Paso 2'
-    var_paso    = arr_version[2];
+    var_paso    = xml.release[2].version;;
     figlet 'Paso 3'
     var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
 
