@@ -3,13 +3,13 @@ import groovy.util.*
 
 def call()
 {
-	def parser = new XmlParser()
-	def doc    = parser.parse("resources/versiones.xml")
+	def parser  = new XmlParser()
+	def archivo = parser.parse("resources/versiones.xml")
 
 	String var_version = ''
 		
     var_version = ${bk['@version']
-    doc.movie.each
+    archivo.release.each
     {
     	bk->
     	print("Version archivo:")
