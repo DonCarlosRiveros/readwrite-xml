@@ -32,6 +32,7 @@ def call()
     println 'Posicion del . en numero : ' + var_nropos;
 
     var_release = var_inversa.substring(1, var_nropos);
+    var_newrelease = var_release.toInteger() + 1;
 
     println "Release : " + var_release;
 
@@ -39,7 +40,7 @@ def call()
 
     var_nropos = var_nropos + 1;
 
-    var_newversion = var_version.substring(1, (var_largo-var_nropos)) + '.'
+    var_newversion = var_version.substring(1, (var_largo-var_nropos)) + '.' + var_newrelease;
 
     print("Version archivo:")
     println var_version
