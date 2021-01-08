@@ -17,9 +17,11 @@ def call()
     var_inversa = var_version.reverse();
     println 'Inversa : ' + var_inversa;
     var_pos = var_inversa.indexOf('.');
+    println 'var_pos : ' + var_pos;
     var_nropos = var_pos.toInteger();
+    println 'var_nropos : ' + var_nropos;
     var_release = var_inversa.substring(1, var_nropos);
-    println var_release;
+    println 'var_release : ' + var_release;
     figlet 'antes'
     var_newrelease = var_release.toInteger() + 1;
     figlet 'despues'
