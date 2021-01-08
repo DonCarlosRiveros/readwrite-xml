@@ -18,7 +18,8 @@ def call()
     var_version = xml.release[0].version;
     figlet 'Paso 1'
     arr_version = var_version.split('.');
-    println arr_version.lenght
+    System.out.println arr_version.lenght;
+
     println arr_version[1]
     println arr_version[2]
     figlet 'Paso 2'
