@@ -1,0 +1,9 @@
+<releases>
+    <release>
+        <filePath>build\\DevOpsUsach2020-0.0.1.jar</filePath>
+        <artifactId>DevOpsUsach2020</artifactId>
+        <groupId>com.devopsusach2020</groupId>
+        <packaging>jar</packaging>
+        <version>3.0.0</version>
+    </release>
+</releases>
