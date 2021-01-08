@@ -13,11 +13,17 @@ def call()
     String var_newversion = ''
     String[] arr_version
 
-    arr_version = var_version.split('.');
-    var_version = xml.release[0].version;
-    var_paso    = ((arr_version[2].toInteger)+1).toString;
+    figlet 'Antes'
 
+    arr_version = var_version.split('.');
+    figlet 'Paso 1'
+    var_version = xml.release[0].version;
+    figlet 'Paso 2'
+    var_paso    = ((arr_version[2].toInteger)+1).toString;
+    figlet 'Paso 3'
     var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
+
+    
 
     print("Version archivo:")
     println var_version
