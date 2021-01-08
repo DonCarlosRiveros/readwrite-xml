@@ -3,8 +3,6 @@ def call()
 {
 	def archivo = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt"
 
-    def newFile = new File('/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt')
-
 	String var_version    = ''
     String var_inversa    = ''
     String var_newversion = ''
