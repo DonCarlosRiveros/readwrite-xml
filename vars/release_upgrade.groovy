@@ -1,9 +1,10 @@
 def call()
 {
     sh 'curl -X GET -u admin:criveros http://localhost:8082/repository/test-nexus/com/devopsusach2020/DevOpsUsach2020/1.0.0/DevOpsUsach2020-1.0.0-versiones.txt -O'
+    
     def archivo = 'DevOpsUsach2020-1.0.0-versiones.txt'
 
-	String var_version    = ''
+    String var_version    = ''
     String var_inversa    = ''
     String var_newversion = ''
     String var_pos        = ''
@@ -22,8 +23,8 @@ def call()
     var_nropos = var_nropos + 1;    
     var_newversion = var_version.substring(0, (var_largo-var_nropos)) + '.' + var_newrelease;
 
-    figlet 'Nueva-version'
-    
+    figlet 'Nueva Version'
+
     println var_newversion
 
     File file_update = new File(archivo)
