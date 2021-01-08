@@ -31,6 +31,6 @@ def call()
 
     println var_newversion
 
-    File file_update = new File(archivo)
-    file_update.write(var_newversion);
+    /*File file_update = new File(archivo)
+    file_update.write(var_newversion);*/
 }
