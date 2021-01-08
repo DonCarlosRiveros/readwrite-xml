@@ -18,7 +18,7 @@ def call()
     var_version = xml.release[0].version;
     figlet 'Paso 1'
     arr_version = var_version.split('.');
-    System.out.println arr_version.lenght;
+    System.out.println "The number of fruits is: " + arr_version.lenght);
 
     println arr_version[1]
     println arr_version[2]
