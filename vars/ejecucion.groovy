@@ -23,15 +23,16 @@ def call()
 
     figlet 'Paso 1'
 
-    println var_version.reverse();
-    println(var_version.indexOf('.'));
-    var_pos = (var_version.reverse()).indexOf('.');
+    var_inversa = var_version.reverse();
+    println var_inversa
+
+    var_pos = var_inversa.indexOf('.');
     println var_pos;
     var_nropos = var_pos.toInteger();
-    var_inversa = var_version.reverse();
+    println var_nropos;
     var_release = var_inversa.substring(1, var_nropos);
 
-    println "Nuevo release : " + var_newrelease;
+    println "Release : " + var_release;
 
     figlet 'Paso 2'
 
