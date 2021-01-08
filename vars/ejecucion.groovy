@@ -1,12 +1,7 @@
-import groovy.xml.MarkupBuilder 
-import groovy.util.*
-import groovy.xml.DOMBuilder;
-import groovy.xml.dom.DOMCategory;
 
 def call()
 {
-	def archivoxml = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.xml"
-    def xml        = new XmlParser().parse(archivoxml)
+	def archivo = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt"
 
 	String var_version    = ''
     String var_paso       = ''
@@ -15,7 +10,7 @@ def call()
 
     figlet 'Antes'
 
-    var_version = xml.release[0].version;
+    var_version = new File(archivo).getText('UTF-8')
     println var_version
     figlet 'Paso 1'
     arr_version = var_version.split(".");
