@@ -16,9 +16,9 @@ def call()
 
     var_version = new File(archivo).getText('UTF-8')
     println var_version
-    var_largo = var_version.lenght();
+    var_largo = var_version.length();
     println "Largo string : " + var_largo;
-    
+
     figlet 'Paso 1'
 
     String[] arr_version = var_version.split(".");
