@@ -6,7 +6,7 @@ def call()
 	String var_version    = ''
     String var_paso       = ''
     String var_newversion = ''
-    String[] arr_version
+    /* String[] arr_version */
 
     figlet 'Antes'
 
@@ -14,7 +14,7 @@ def call()
     println var_version
     figlet 'Paso 1'
 
-    arr_version = var_version.split(".");
+    String[] arr_version = var_version.split(".");
     figlet 'Paso 2'
     println "Números contenidos: " + arr_version.lenght;
 
