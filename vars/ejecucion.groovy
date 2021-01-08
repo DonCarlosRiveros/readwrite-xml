@@ -1,6 +1,7 @@
 import groovy.xml.MarkupBuilder 
 import groovy.util.*
 import groovy.xml.DOMBuilder;
+import groovy.xml.dom.DOMCategory;
 
 def call()
 {
