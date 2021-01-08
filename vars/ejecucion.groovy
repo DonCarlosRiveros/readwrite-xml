@@ -8,11 +8,8 @@ def call()
 
 	String var_version = ''
 		
-    var_version = ${bk['@version']
-    archivo.release.each
-    {
-    	bk->
-    	print("Version archivo:")
-    	println "${bk['@version']}"
-    }
+    var_version = archivo.release.version
+    print("Version archivo:")
+    println var_version
+
 }
