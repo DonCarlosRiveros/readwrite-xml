@@ -22,6 +22,7 @@ def call()
     var_nropos = var_nropos + 1;    
     var_newversion = var_version.substring(0, (var_largo-var_nropos)) + '.' + var_newrelease;
 
+    figlet 'Nueva-version'
     println var_newversion
 
     File file_update = new File(archivo)
