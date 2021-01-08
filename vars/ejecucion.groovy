@@ -29,13 +29,11 @@ def call()
     println var_pos;
     var_nropos = var_pos.toInteger();
     var_inversa = var_version.reverse();
-    var_release = var_inversa.substring(1, var_nropos)
-
-    var_newrelease = var_inversa.substring(1, (var_largo-var_nropos));
+    var_release = var_inversa.substring(1, var_nropos);
 
     println "Nuevo release : " + var_newrelease;
 
-    figlet 'Paso 3'
+    figlet 'Paso 2'
 
     var_nropos = var_nropos + 1;
 
