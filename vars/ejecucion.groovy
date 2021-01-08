@@ -6,7 +6,9 @@ def call()
 	String  var_version    = ''
     String  var_paso       = ''
     String  var_newversion = ''
-    Int var_pos = ''
+    String  var_pos        = ''
+    Int     var_nropos     = 0
+
     /* String[] arr_version */
 
     figlet 'Antes'
@@ -22,8 +24,9 @@ def call()
     println(var_version.indexOf('.'));
     var_pos = (var_version.reverse()).indexOf('.');
     println var_pos;
+    var_nropos = var_pos.toInteger();
 
-    println "Números contenidos: " + arr_version.lenght;
+    println "Números posicion : " + var_nropos;
 
     println arr_version[1]
     println arr_version[2]
@@ -36,6 +39,8 @@ def call()
     println var_version
 
     print("Nueva Version archivo:")
+
+    var_newversion = var_version.dropRight(  3 );
     println var_newversion
 
 
