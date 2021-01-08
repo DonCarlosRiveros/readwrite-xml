@@ -7,7 +7,7 @@ def call()
     String  var_paso       = ''
     String  var_newversion = ''
     String  var_pos        = ''
-    Int     var_nropos     = 0
+    Number  var_nropos     = 0
 
     /* String[] arr_version */
 
