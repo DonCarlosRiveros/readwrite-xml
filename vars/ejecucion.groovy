@@ -20,7 +20,7 @@ def call()
     println 'var_pos : ' + var_pos;
     var_nropos = var_pos.toInteger();
     println 'var_nropos : ' + var_nropos;
-    var_release = var_inversa.substring(1, var_nropos);
+    var_release = var_inversa.substring(0, var_nropos);
     println 'var_release : ' + var_release;
     figlet 'antes'
     var_newrelease = var_release.toInteger() + 1;
