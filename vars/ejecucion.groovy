@@ -9,7 +9,7 @@ def call()
     def xml        = new XmlParser().parse(archivoxml)
 
 	String var_version    = ''
-    String var_paso       = ''
+    String var_paso       = 0
     String var_newversion = ''
     String[] arr_version
 
@@ -19,7 +19,7 @@ def call()
     figlet 'Paso 1'
     var_version = xml.release[0].version;
     figlet 'Paso 2'
-    var_paso    = ((arr_version[2].toInteger)+1).toString;
+    var_paso    = ((arr_version[2].toInteger)+1);
     figlet 'Paso 3'
     var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
 
