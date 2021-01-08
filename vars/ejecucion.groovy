@@ -15,9 +15,9 @@ def call()
 
     figlet 'Antes'
 
-    arr_version = var_version.split('.');
-    figlet 'Paso 1'
     var_version = xml.release[0].version;
+    figlet 'Paso 1'
+    arr_version = var_version.split('.');
     figlet 'Paso 2'
     var_paso    = ((arr_version[2].toInteger)+1);
     figlet 'Paso 3'
