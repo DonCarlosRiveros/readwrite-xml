@@ -1,7 +1,7 @@
 
 def call()
 {
-	def archivo = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt"
+	def archivo = "/SSD/Personales/Dip-DevOps/versiones.txt"
 
 	String var_version    = ''
     String var_inversa    = ''
