@@ -36,14 +36,13 @@ def call()
 
     var_nropos = var_nropos + 1;
 
-    var_newversion = arr_version[0] + '.' + arr_version[1] + var_paso;
+    var_newversion = var_version.substring(1, (var_largo-var_pos));
 
     print("Version archivo:")
     println var_version
 
     print("Nueva Version archivo:")
 
-    var_newversion = var_version.dropRight(  3 );
     println var_newversion
 
 
