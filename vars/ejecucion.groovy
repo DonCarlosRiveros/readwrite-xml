@@ -9,7 +9,7 @@ def call()
     def xml        = new XmlParser().parse(archivoxml)
 
 	String var_version    = ''
-    String var_paso       = ''
+    String var_paso       = 0
     String var_newversion = ''
     String[] arr_version
 
