@@ -3,10 +3,10 @@ def call()
 {
 	def archivo = "/SSD/Personales/Dip-DevOps/readwrite-xml/resources/versiones.txt"
 
-	String var_version    = ''
-    String var_paso       = ''
-    String var_newversion = ''
-    Int var_pos           = 0
+	String  var_version    = ''
+    String  var_paso       = ''
+    String  var_newversion = ''
+    Int var_pos = ''
     /* String[] arr_version */
 
     figlet 'Antes'
