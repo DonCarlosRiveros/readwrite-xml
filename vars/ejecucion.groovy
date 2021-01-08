@@ -9,8 +9,8 @@ def call()
     String var_pos        = ''
     Number var_nropos     = 0
     Number var_largo      = 0
-    Number var_release    = 0
-    String var_newrelease = ''
+    String var_release    = ''
+    Number var_newrelease = 0
 
     /* String[] arr_version */
 
