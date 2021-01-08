@@ -23,10 +23,6 @@ def call()
     var_pos = (var_version.reverse()).indexOf('.');
     println var_pos;
 
-    var_nrorelease = (var_version.indexOf('.')), 1, (var_version.indexOf('.'));
-    println var_nroversion;
-
-
     println "Números contenidos: " + arr_version.lenght;
 
     println arr_version[1]
