@@ -15,8 +15,7 @@ def call()
 
     figlet 'Antes'
 
-    /* var_version = xml.release[0].version; */
-    var_version = xml.release.version;
+    var_version = xml.release[0].version;
     figlet 'Paso 1'
     arr_version = var_version.split(".");
     println "Números contenidos: " + arr_version.lenght;
