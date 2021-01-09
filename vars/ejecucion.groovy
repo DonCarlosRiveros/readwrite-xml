@@ -2,7 +2,7 @@ def call()
 {
     sh 'curl -X GET -u admin:criveros http://localhost:8082/repository/test-nexus/com/devopsusach2020/DevOpsUsach2020/1.0.0/DevOpsUsach2020-1.0.0-versiones.txt -O'
     
-    def archivo = "DevOpsUsach2020-1.0.0-versiones.txt"
+    def archivo = 'DevOpsUsach2020-1.0.0-versiones'
 
     String var_version    = ''
     String var_inversa    = ''
@@ -30,7 +30,7 @@ def call()
     File file_update = new File(archivo)
     file_update.write(var_newversion);
 
-    nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'test-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'txt', filePath: 'DevOpsUsach2020-1.0-versiones.txt']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'txt', version: '1.0.0']]]
+    nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'test-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'txt', filePath: 'versiones.txt']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'txt', version: '1.0.0']]]
 
     return archivo;
 }
